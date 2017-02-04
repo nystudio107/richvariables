@@ -2,6 +2,8 @@
 
 Allows you to easily use Craft Globals as variables in Rich Text fields
 
+![Screenshot](resources/screenshots/richvariables00.png)
+
 ## Installation
 
 To install Rich Variables, follow these steps:
