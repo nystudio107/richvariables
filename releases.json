@@ -1,5 +1,15 @@
 [
     {
+        "version": "1.0.1",
+        "downloadUrl": "https://github.com/nystudio107/richvariables/archive/master.zip",
+        "date": "2017-02-05T06:03:23.268Z",
+        "notes": [
+            "[Added] Added support for Preparse fields",
+            "[Added] Added support for Date fields",
+            "[Added] Added support for Dropdown fields"
+        ]
+    },
+    {
         "version": "1.0.0",
         "downloadUrl": "https://github.com/nystudio107/richvariables/archive/master.zip",
         "date": "2017-02-04T06:03:23.268Z",

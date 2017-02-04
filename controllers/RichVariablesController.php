@@ -50,6 +50,9 @@ class RichVariablesController extends BaseController
                 {
                     case "PlainText":
                     case "Number":
+                    case "PreparseField_Preparse":
+                    case "Date":
+                    case "Dropdown":
                         // Add the field title and Reference Tag as per https://craftcms.com/docs/reference-tags
                         $value = $globalsSet->getContent()[$field->handle];
                         $thisVar = array(
@@ -57,6 +60,11 @@ class RichVariablesController extends BaseController
                             'text' => "{globalset:" . $globalsSet->attributes['id'] . ":" . $field->handle . "}",
                             );
                         array_push($result, $thisVar);
+                        break;
+
+                    case "Table":
+                    case "SuperTable":
+                        // This may not be possible with native reference tags
                         break;
 
                     default:

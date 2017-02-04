@@ -28,7 +28,7 @@ To configure Rich Variables, first you'll need to create a Globals set (if you d
 
 ![Screenshot](resources/screenshots/richvariables01.png)
 
-You can put any kinds of fields that you want into your Globals set, but Rich Variables only recognizes `PlainText` and `Number` fields currently.
+You can put any kinds of fields that you want into your Globals set, but Rich Variables only recognizes the following FieldTypes currently: `PlainText`, `Number`, `Date`, `Dropdown`, and `Preparse`.
 
 Next, you need to tell Rich Variables which Globals set (you can have an arbitrary number of them) that it should use. To do this, click on **Settings**→**Rich Variables** and choose your Globals set, then click on **Save**:
 
