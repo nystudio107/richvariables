@@ -5,6 +5,7 @@
 * Added support for Preparse fields
 * Added support for Date fields
 * Added support for Dropdown fields
+
 ### Changed
 * Updated screenshots in README.md
 
