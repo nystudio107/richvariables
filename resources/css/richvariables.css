@@ -1,0 +1,14 @@
+/* -- Use the <ins> tag for our tokenized variables */
+
+.redactor-editor ins {
+    text-decoration: none!important;
+    background-color: #DDDDDD;
+    border-radius: 10px;
+    border: 1px solid #C1C1C1;
+    color: #29323D;
+    padding: 1px 7px;
+    margin: 0px 5px;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+    line-height: 14px;
+}

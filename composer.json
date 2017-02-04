@@ -1,0 +1,14 @@
+{
+	"name": "nystudio107/richvariables",
+	"description": "Allows you to easily use Craft Globals as variables in Rich Text fields",
+	"type": "craft-plugin",
+	"authors": [
+		{
+			"name": "nystudio107",
+			"homepage": "https://nystudio107.com"
+		}
+	],
+	"require": {
+		"composer/installers": "~1.0"
+	}
+}
