@@ -65,7 +65,7 @@ On the frontend, the display of the Rich Text field will also automatically incl
 
 ![Screenshot](resources/screenshots/richvariables05.png)
 
-The fun thing about the way Rich Variables works is that since it leverages the built-in Craft functionality of [Reference Tag](https://craftcms.com/docs/reference-tags), even if you uninstall the Rich Variables plugin, everything will continue to work.
+The fun thing about the way Rich Variables works is that since it leverages the built-in Craft functionality of [Reference Tags](https://craftcms.com/docs/reference-tags), even if you uninstall the Rich Variables plugin, everything will continue to work.
 
 Nice.
 
