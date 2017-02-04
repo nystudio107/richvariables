@@ -63,7 +63,7 @@ With a tokenized display of the actual value that is in your Globals set Field. 
 
 On the frontend, the display of the Rich Text field will also automatically include the Globals set values, and might look something like this:
 
-![Screenshot](resources/screenshots/richvariables04.png)
+![Screenshot](resources/screenshots/richvariables05.png)
 
 The fun thing about the way Rich Variables works is that since it leverages the built-in Craft functionality of [Reference Tag](https://craftcms.com/docs/reference-tags), even if you uninstall the Rich Variables plugin, everything will continue to work.
 
