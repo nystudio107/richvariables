@@ -59,7 +59,7 @@ This is actually a [Reference Tag](https://craftcms.com/docs/reference-tags) to 
 
 ![Screenshot](resources/screenshots/richvariables04.png)
 
-With a tokenized display of the actual value that is in your Globals set Field. If you change the values in your Globals set Fields, they will automatically be updated everywhere they are used in your Rich Text fields.
+...with a tokenized display of the actual value that is in your Globals set Fields. If you change the values in your Globals set Fields, they will automatically be updated everywhere they are used in your Rich Text fields.
 
 On the frontend, the display of the Rich Text field will also automatically include the Globals set values, and might look something like this:
 
