@@ -29,6 +29,7 @@ class RichVariablesController extends BaseController
     public function actionIndex()
     {
         $result = array();
+        $variablesList = array();
 
         // Get the global set to use
         $settings = craft()->plugins->getPlugin('richvariables')->getSettings();
@@ -59,7 +60,7 @@ class RichVariablesController extends BaseController
                             'title' => $field->name,
                             'text' => "{globalset:" . $globalsSet->attributes['id'] . ":" . $field->handle . "}",
                             );
-                        array_push($result, $thisVar);
+                        array_push($variablesList, $thisVar);
                         break;
 
                     case "Table":
@@ -74,6 +75,9 @@ class RichVariablesController extends BaseController
             }
         }
 
+        // Return everything to our JavaScript encoded as JSON
+        $result['variablesList'] = $variablesList;
+        $result['useIconForMenu'] = $settings['useIconForMenu'];
         $this->returnJson($result);
     }
 }

@@ -28,7 +28,7 @@ class RichVariablesPlugin extends BasePlugin
 
 	public function getVersion()
 	{
-		return '1.0.1';
+		return '1.0.2';
 	}
 
     public function getSchemaVersion()
@@ -63,6 +63,7 @@ class RichVariablesPlugin extends BasePlugin
     {
         return array(
             'globalSetHandle' => array(AttributeType::String, 'label' => 'Global Set', 'default' => ''),
+            'useIconForMenu' => array(AttributeType::Bool, 'label' => 'Use Icon for Menu', 'default' => true),
         );
     }
 

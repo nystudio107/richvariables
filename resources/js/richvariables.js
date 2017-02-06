@@ -15,11 +15,11 @@ RedactorPlugins.richvariables = function() {
     return {
         init: function() {
             var dropdown = {};
-            var menuItems = JSON.parse(request.responseText);
+            var responseVars = JSON.parse(request.responseText);
             var _this = this;
 
             // Iterate through each menu item, adding them to our dropdown
-            menuItems.forEach(function(menuItem, index) {
+            responseVars.variablesList.forEach(function(menuItem, index) {
                 var key = 'point' + (index + 1);
                 dropdown[key] = {
                     title: menuItem.title,
@@ -29,7 +29,7 @@ RedactorPlugins.richvariables = function() {
                 };
             });
             // Handle empty menu items
-            if (menuItems.length === 0) {
+            if (responseVars.variablesList.length === 0) {
                 dropdown.point1 = {
                     title: "No Globals Found",
                     func: function(buttonName) {
@@ -40,7 +40,8 @@ RedactorPlugins.richvariables = function() {
             // Add the button and dropdown
             var button = this.button.add('variables', 'Variables');
             this.button.addDropdown(button, dropdown);
-            this.button.setIcon(button, '<img src="' + Craft.getResourceUrl('richvariables/icon.svg') + '" height="16" width="16" style="margin-top: -2px;">');
+            if (responseVars.useIconForMenu)
+                this.button.setIcon(button, '<img src="' + Craft.getResourceUrl('richvariables/icon.svg') + '" height="16" width="16" style="margin-top: -2px;">');
         },
     };
 };

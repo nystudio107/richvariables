@@ -1,5 +1,14 @@
 [
     {
+        "version": "1.0.2",
+        "downloadUrl": "https://github.com/nystudio107/richvariables/archive/master.zip",
+        "date": "2017-02-06T23:39:19.322Z",
+        "notes": [
+            "[Added] Added a setting to control whether the Rich Variables menu should be text or an icon",
+            "[Improved] Harmonized the code with the Craft 3 version"
+        ]
+    },
+    {
         "version": "1.0.1",
         "downloadUrl": "https://github.com/nystudio107/richvariables/archive/master.zip",
         "date": "2017-02-04T23:39:19.322Z",
