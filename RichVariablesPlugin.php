@@ -28,7 +28,7 @@ class RichVariablesPlugin extends BasePlugin
 
 	public function getVersion()
 	{
-		return '1.0.2';
+		return '1.0.3';
 	}
 
     public function getSchemaVersion()
@@ -50,7 +50,7 @@ class RichVariablesPlugin extends BasePlugin
 	{
 		if (!craft()->isConsole())
 		{
-			if (craft()->request->isCpRequest())
+			if (craft()->request->isCpRequest() && craft()->userSession->isLoggedIn())
 			{
                 craft()->templates->includeCssResource('richvariables/css/richvariables.css');
                 craft()->templates->includeJsResource('richvariables/js/foreachpolyfill.js');

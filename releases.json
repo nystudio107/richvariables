@@ -1,5 +1,14 @@
 [
     {
+        "version": "1.0.3",
+        "downloadUrl": "https://github.com/nystudio107/richvariables/archive/master.zip",
+        "date": "2017-02-07T23:39:19.322Z",
+        "notes": [
+            "[Fixed] Fixed an issue where the user might be redirected errantly to JSON settings on login",
+            "[Improved] Removed the spaces inside of the inserted `<ins>` tags"
+        ]
+    },
+    {
         "version": "1.0.2",
         "downloadUrl": "https://github.com/nystudio107/richvariables/archive/master.zip",
         "date": "2017-02-06T23:39:19.322Z",
