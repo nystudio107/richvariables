@@ -1,5 +1,9 @@
 # Rich Variables Changelog
 
+## 1.0.4 -- 2017.02.10
+### Changed
+* Removed `allowAnonymous` from the controller, since we only want to work for logged in users
+
 ## 1.0.3 -- 2017.02.07
 ### Fixed
 * Fixed an issue where the user might be redirected errantly to JSON settings on login

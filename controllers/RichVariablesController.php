@@ -15,15 +15,6 @@ namespace Craft;
 
 class RichVariablesController extends BaseController
 {
-
-    /**
-     * @var    bool|array Allows anonymous access to this controller's actions.
-     * @access protected
-     */
-    protected $allowAnonymous = array(
-            'actionIndex',
-        );
-
     /**
      */
     public function actionIndex()
