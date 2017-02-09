@@ -2,7 +2,7 @@
     {
         "version": "1.0.4",
         "downloadUrl": "https://github.com/nystudio107/richvariables/archive/master.zip",
-        "date": "2017-02-10T23:39:19.322Z",
+        "date": "2017-02-09T23:39:19.322Z",
         "notes": [
             "[Improved] Removed `allowAnonymous` from the controller, since we only want to work for logged in users"
         ]
