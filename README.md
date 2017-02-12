@@ -2,6 +2,8 @@
 
 Allows you to easily use Craft Globals as variables in Rich Text fields
 
+Related: [Rich Variables for Craft 3.x](https://github.com/nystudio107/craft3-richvariables)
+
 ![Screenshot](resources/screenshots/richvariables00.png)
 
 ## Installation
