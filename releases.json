@@ -1,5 +1,15 @@
 [
     {
+        "version": "1.0.5",
+        "downloadUrl": "https://github.com/nystudio107/richvariables/archive/master.zip",
+        "date": "2017-02-24T23:39:19.322Z",
+        "notes": [
+            "[Fixed] Fixed a styling issue with Craft CMS 2.6.2963 due to its uses of Redactor 2.2",
+            "[Improved] Handle the situation of there being a globals set, but it not being set in the RichVariables preferences",
+            "[Improved] Removed the unused `icon-mask.svg` file"
+        ]
+    },
+    {
         "version": "1.0.4",
         "downloadUrl": "https://github.com/nystudio107/richvariables/archive/master.zip",
         "date": "2017-02-09T23:39:19.322Z",

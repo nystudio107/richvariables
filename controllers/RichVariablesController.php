@@ -29,7 +29,7 @@ class RichVariablesController extends BaseController
         if (!$globalsSet) {
             $allGlobalsSetIds = craft()->globals->getAllSetIds();
             if (!empty($allGlobalsSetIds)) {
-                //$globalsSet = craft()->globals->getSetById($allGlobalsSetIds[0]);
+                $globalsSet = craft()->globals->getSetById($allGlobalsSetIds[0]);
             }
         }
         if ($globalsSet) {
@@ -38,8 +38,7 @@ class RichVariablesController extends BaseController
             foreach ($fieldLayoutFields as $fieldLayoutField) {
                 // Get the actual field, and check that it's type is something we support
                 $field = craft()->fields->getFieldById($fieldLayoutField->fieldId);
-                switch ($field->type)
-                {
+                switch ($field->type) {
                     case "PlainText":
                     case "Number":
                     case "PreparseField_Preparse":

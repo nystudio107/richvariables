@@ -6,10 +6,10 @@ namespace Craft;
  */
 class RichVariablesPlugin extends BasePlugin
 {
-	public function getName()
-	{
-		return 'Rich Variables';
-	}
+    public function getName()
+    {
+        return 'Rich Variables';
+    }
 
     public function getDescription()
     {
@@ -26,38 +26,36 @@ class RichVariablesPlugin extends BasePlugin
         return 'https://raw.githubusercontent.com/nystudio107/richvariables/master/releases.json';
     }
 
-	public function getVersion()
-	{
-		return '1.0.4';
-	}
+    public function getVersion()
+    {
+        return '1.0.5';
+    }
 
     public function getSchemaVersion()
     {
         return '1.0.0';
     }
 
-	public function getDeveloper()
-	{
-		return 'nystudio107';
-	}
+    public function getDeveloper()
+    {
+        return 'nystudio107';
+    }
 
-	public function getDeveloperUrl()
-	{
-		return 'https://nystudio107.com';
-	}
+    public function getDeveloperUrl()
+    {
+        return 'https://nystudio107.com';
+    }
 
-	public function init()
-	{
-		if (!craft()->isConsole())
-		{
-			if (craft()->request->isCpRequest() && craft()->userSession->isLoggedIn())
-			{
+    public function init()
+    {
+        if (!craft()->isConsole()) {
+            if (craft()->request->isCpRequest() && craft()->userSession->isLoggedIn()) {
                 craft()->templates->includeCssResource('richvariables/css/richvariables.css');
                 craft()->templates->includeJsResource('richvariables/js/foreachpolyfill.js');
                 craft()->templates->includeJsResource('richvariables/js/richvariables.js');
-			}
-		}
-	}
+            }
+        }
+    }
 
     protected function defineSettings()
     {

@@ -1,5 +1,6 @@
 /* -- Use the <ins> tag for our tokenized variables */
 
+.redactor-styles ins,
 .redactor-editor ins {
     text-decoration: none!important;
     background-color: #DDDDDD;
